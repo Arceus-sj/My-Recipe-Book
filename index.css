@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #AA14F0;
+  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 5em;
+    text-shadow: 1px 1px 3px #EEEEEE;
+}
+
+.middle-container {
+    padding: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+}
+
+ .chef-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 48%;
+    /* border: 8px solid #BC8CF2; */
+    /* box-shadow: 5px 2px 6px 4px #BC8CF2; */
+
+    /*
+    -----Parameters for drop-shadow----- 
+
+    ------------------------
+    offset-x offset-y 
+    Two <length> values that determine the shadow offset. offset-x specifies the horizontal distance, 
+    where negative values place the shadow to the left of the element. offset-y specifies the vertical 
+    distance, where negative values place the shadow above the element. If both values are 0, the 
+    shadow is placed directly behind the element.
+    -------------------------
+
+    -------------------------
+    blur-radius (optional)
+    The shadow's blur radius, specified as a <length>. The larger the value, the larger and more 
+    blurred the shadow becomes. If unspecified, it defaults to 0, resulting in a sharp, unblurred 
+    edge. Negative values are not allowed.
+    --------------------------
+
+    --------------------------
+    color (optional)
+    The color of the shadow, specified as a <color>. If unspecified, the value of the color property is used.
+    -------------------------- 
+    */
+
+    /* Syntax for drop-shadow is */
+    /* filter: drop-shadow(offset-x offset-y blur-radius color) */
+    filter: drop-shadow(0 0 0.75rem #000000);
+} 
+
+.para {
+    padding: 10px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Kaushan Script', cursive;
+    /* border: 2px solid black; */
+    color: #EEEEEE;
+    text-shadow: 1px 1px 3px #00EAD3;
+}
+
+.recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;  
+    text-align: center; 
+    /* border: 1px solid black; */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* .recipe-1 {
+    padding: 40px 50px;
+    margin: 30px;
+    border: 2px solid black;
+    background-color: #BC8CF2;
+}
+
+.recipe-2 {
+    padding: 40px 50px;
+    margin: 50px;
+    border: 2px solid black;
+    background-color: #BC8CF2;
+}
+
+.recipe-3 {
+    padding: 40px 50px;
+    margin: 50px;
+    border: 2px solid black;
+    background-color: #BC8CF2;
+} */
+
+
+
+.recipe-1-img, .recipe-2-img, .recipe-3-img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    opacity: 0.4;
+    padding: 0;
+    margin: 20px 20px 0 20px;
+    border-radius: 9px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    filter: drop-shadow(0 0 0.75rem #000);
+}
+
+.recipe-1-img:hover {
+    opacity: 1;
+}
+.recipe-2-img:hover {
+    opacity: 1;
+}
+.recipe-3-img:hover {
+    opacity: 1;
+}
+
+.recipe-1-para, .recipe-2-para, .recipe-3-para {
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 2.5em; 
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 3px #B643CD;
+    padding: 0;
+    margin: 0 20px 20px 20px;
+    background-color: #BC8CF2;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
